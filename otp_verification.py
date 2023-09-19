@@ -9,3 +9,7 @@ OTP=""
 for i in range(6):
     OTP+=digits[math.floor(random.random()*10)]
 otp = OTP + " is your OTP"
+
+msg= otp
+s = smtplib.SMTP('smtp.gmail.com', 587)
+s.starttls()
